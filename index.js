@@ -6,12 +6,21 @@
 	if(typeof define !== 'function') {
 		window.define = function(deps, definition) {
 			window.pintxos = window.pintxos || {};
-			window.pintxos.Flyout = definition();
+			window.pintxos.Flyout = definition(jQuery, pintxos.Component, pintxos.inherit);
 			define = null;
 		};
 	}
 
-	define([], function () {
+	define(
+	[
+		'jQuery',
+		'pintxos-component',
+		'pintxos-inherit'
+	], function (
+		$,
+		Component,
+		inherit
+	) {
 
 
 		/* Constructor

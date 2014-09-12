@@ -13,6 +13,10 @@
 	"authors": [
 		"Jelle Versele"
 	],
-	"dependencies": {}
+	"dependencies": {
+		"pintxos-component": "~1.0.0",
+    	"pintxos-inherit": "~1.0.0",
+    	"jquery": "~2.1.1"
+	}
 }
 
