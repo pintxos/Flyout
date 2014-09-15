@@ -30,6 +30,8 @@
 			target: undefined,
 			closeOnClickOutside: true,
 			events: {
+				init: 'init.Flyout',
+				destroy: 'destroy.Flyout',
 				toggleEvent: 'click',
 				open: 'open.Flyout',
 				close: 'close.Flyout'
