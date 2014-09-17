@@ -61,7 +61,7 @@
 		 * @return {void}
 		 */
 		Flyout.prototype.init = function () {
-			this._superClass.init.call(this);
+			Flyout._super.init.call(this);
 
 			this._on(this.getTrigger(), this.getSettings().events.toggleEvent, this._onTriggerClick);
 
@@ -74,7 +74,7 @@
 		 */
 		Flyout.prototype.destroy = function () {
 			this._$target = undefined;
-			this._superClass.destroy.call(this);
+			Flyout._super.destroy.call(this);
 		};
 
 		/**
