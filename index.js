@@ -65,8 +65,6 @@
 
 			this._on(this.getTrigger(), this.getSettings().events.toggleEvent, this._onTriggerClick);
 
-			console.log(this._eventData)
-
 			this.close();
 		};
 
