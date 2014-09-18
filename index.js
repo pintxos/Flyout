@@ -129,7 +129,6 @@
 				this._off(this._bodyClickHandlerRef);
 			}
 
-
 			this.getEl().trigger(this.getSettings().events.close);
 		};
 
@@ -164,7 +163,7 @@
 				if(typeof settingsTarget === 'undefined') {
 					this._$target = this.getTrigger().next();
 				}else{
-					this._$target = (typeof settingsTarget === 'string') ? this._query(settingsTarget) : settingsTarget;
+					this._$target = (typeof settingsTarget === 'string') ? this._query(settingsTarget, _$body) : settingsTarget;
 				}
 
 			}
