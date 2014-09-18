@@ -65,6 +65,8 @@
 
 			this._on(this.getTrigger(), this.getSettings().events.toggleEvent, this._onTriggerClick);
 
+			console.log(this._eventData)
+
 			this.close();
 		};
 
@@ -114,7 +116,10 @@
 
 			this._isOpen = false;
 
-			this._off(this._bodyClickHandlerRef);
+			if(typeof this._bodyClickHandlerRef !== 'undefined') {
+				this._off(this._bodyClickHandlerRef);
+			}
+
 
 			this.getEl().trigger(this.getSettings().events.close);
 		};
