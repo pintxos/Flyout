@@ -27,8 +27,16 @@
 		/* Default settings
 		----------------------------------------------- */
 		_defaults = {
+
+			// target is optional. If none is given, the target is
+			// set to the element that follows after the trigger (using .next()).
+			// Can be a selector or a jQuery object.
 			target: undefined,
+
+			// if set to true the flyout will close one a click
+			// happens outside of the trigger and target element.
 			closeOnClickOutside: true,
+
 			events: {
 				init: 'init.Flyout',
 				destroy: 'destroy.Flyout',
