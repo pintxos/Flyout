@@ -74,6 +74,9 @@
 		 */
 		Flyout.prototype.destroy = function () {
 			this._$target = undefined;
+
+			this.close();
+
 			Flyout._super.destroy.call(this);
 		};
 
