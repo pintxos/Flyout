@@ -7,7 +7,7 @@
     "grunt-pintxos": "^1.0.1"
   },
   "scripts": {
-    "test": "grunt testCI"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
